@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/eggly.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <title>Example 2 Destroy</title>
+</head>
+<body  ng-app="example2Module">
+Example 2 Destroy
+
+<!-- code starts here-->
+<div ng-controller="MyCtrl">
+    <div ng-show="isToggle">
+        <input type="text" ng-model="person.firstName"/>
+        <input type="text" ng-model="person.lastName"/>
+        <br>
+        Welcome, {{person.firstName}} {{person.lastName}}
+    </div>
+    <button type="button" class="btn" ng-click="toggle()">Toggle</button>
+</div>
+
+<!---------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+
+<script src="app/ex2module/app.js"></script>
+<script src="app/ex2module/controller/Controllers.js"></script>
+
+</body>
+</html>

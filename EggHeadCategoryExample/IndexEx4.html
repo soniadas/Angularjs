@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Partials Tutorials</title>
+    <link rel="stylesheet" href="assets/css/eggly.css">
+</head>
+<body>
+view  Example
+
+<div ng-app="ex4Module">
+    <menu ng-show="showMenu" ng-init="showMenu=false">
+        <a ui-sref='view1'>View11</a>
+        <a ui-sref='view2'>View12</a>
+    </menu>
+   <ui-view></ui-view>
+    <div ng-controller="MainCtrl">
+        <button type="button" ng-click="logout()" ng-show="showMenu">Logout</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.js"></script>
+<script type="text/javascript" src="lib/angular-ui-router.js"></script>
+<!--<script src="https://rawgit.com/ocombe/ocLazyLoad/master/dist/ocLazyLoad.js"></script> -->
+<script type="text/javascript" src="app/ex4module/app.js"></script>
+<script type="text/javascript" src="app/ex4module/controller/Controllers.js"></script>
+<script type="text/javascript" src="app/ex4module/partials/View1Controller.js"></script>
+<script type="text/javascript" src="app/ex4module/partials1/View1Controller.js"></script>
+<script type="text/javascript" src="app/ex4module/partialsLogin/View1Controller.js"></script>
+</body>
+</html>
